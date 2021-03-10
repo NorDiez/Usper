@@ -1,0 +1,29 @@
+.footer{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 22px;
+    background: #fafafa;
+    text-align: center;
+    @media(max-width: 767px){
+        margin-bottom: 35px;
+    }
+    &__logo{
+        color: #282828;
+        font-size: 35px;
+        line-height: 30px;
+        font-family: @AvenirNextCyr-Regular;
+    }
+    &__privacy{
+        color: #363636;
+        text-decoration: underline;
+        font-size: 14px;
+        line-height: 30px;
+    }
+    &__media{
+        display: inline-block;
+        &-item{
+            margin-left: 13px;
+            display: inline-block;
+        }
+    }
+}

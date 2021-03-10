@@ -1,0 +1,182 @@
+.translate {
+	padding-top: 80px;
+
+	&__item {
+		border-radius: 5px;
+		overflow: hidden;
+		background-color: #fafafa;
+		padding-bottom: 65px;
+
+		@media(max-width: 767px) {
+			margin-bottom: 35px;
+		}
+
+		&-photo {
+			width: 100%;
+			height: 355px;
+			background: url(../images/translate.png) no-repeat center center;
+			background-size: cover;
+
+			@media(max-width: 1200px) {
+				display: inline-block;
+				width: 355px;
+			}
+		}
+
+		&-name {
+			padding: 30px 30px 20px 30px;
+			color: #282828;
+			font-size: 20px;
+			line-height: 1.2;
+			font-family: @AvenirNextCyr-Medium;
+		}
+
+		&-language {
+			color: #282828;
+			font-size: 18px;
+			line-height: 23px;
+			padding: 0px 30px 20px 30px;
+		}
+
+		&-time {
+			color: #282828;
+			font-size: 18px;
+			line-height: 23px;
+			padding: 0px 30px 20px 30px;
+
+			&:after {
+				margin-top: 20px;
+				content: '';
+				display: block;
+				height: 1px;
+				background: #e1e1e1;
+			}
+		}
+
+		&-rating {
+			font-size: 18px;
+			line-height: 30px;
+			padding: 0px 30px 10px 35px;
+		}
+
+		&-voise {
+			color: #282828;
+			font-size: 18px;
+			line-height: 30px;
+			padding: 0px 30px 0px 30px;
+		}
+	}
+
+	&__item-stars {
+		display: inline-block;
+		font-size: 0;
+		padding-left: 22px;
+
+		span {
+			padding: 0;
+			font-size: 15px;
+			line-height: 1.2;
+			color: lightgrey;
+		}
+
+		>span {
+			&:before {
+				content: '★';
+			}
+		}
+
+		>span.active {
+			color: gold;
+		}
+	}
+
+}
+
+/* button */
+.translate {
+	text-align: center;
+
+	&__btn {
+		width: 155px;
+		height: 52px;
+		font-size: 14px;
+		font-family: @AvenirNextCyr-Demi;
+		line-height: 30px;
+		color: #fff;
+		background: @blue;
+		cursor: pointer;
+		border-radius: 5px;
+		text-transform: uppercase;
+	}
+}
+
+/* information card */
+.info {
+	padding-top: 80px;
+	text-align: center;
+	padding-bottom: 80px;
+
+	&__title {
+		color: #282828;
+		font-size: 45px;
+		line-height: 65px;
+		margin-bottom: 50px;
+		text-transform: uppercase;
+		font-family: @AvenirNextCyr-Demi;
+	}
+
+	&__item {
+		position: relative;
+		border-radius: 5px;
+		overflow: hidden;
+		background-color: #fafafa;
+		width: 270px;
+		height: 316px;
+
+		padding-bottom: 65px;
+		display: inline-block;
+
+		@media(max-width: 767px) {
+
+			margin-bottom: 35px;
+		}
+
+		@media(max-width: 1200px) {}
+
+		@media(max-width: 991px) {}
+
+		&-number {
+			top: 26px;
+			margin-left: 95px;
+			position: absolute;
+			color: #c9c9c9;
+
+			@media(max-width: 1200px) {
+				display: inline-block;
+			}
+		}
+
+		&-subtitle {
+			/* height: 55px; */
+			margin: 20px 21px 15px 21px;
+			font-size: 16px;
+			line-height: 21px;
+			font-family: @AvenirNextCyr-Medium;
+			color: #282828;
+		}
+
+		&-text {
+			margin-bottom: 0 21px 60px 21px;
+			font-size: 16px;
+			line-height: 23px;
+			font-family: @AvenirNextCyr-Regular;
+			color: @gray;
+		}
+	}
+}
+
+.hr__item {
+	border: 1px;
+	height: 1px;
+	background: @blue;
+}

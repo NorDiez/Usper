@@ -1,0 +1,108 @@
+.header {
+	border-bottom: 1px solid #d4d4d4;
+
+	&__logo {
+		margin: 25px 30px 30px 0;
+		display: inline-block;
+		vertical-align: top;
+
+		& img {
+			width: 104px;
+			height: 46px;
+		}
+
+		@media(max-width: 991px) {
+			display: none;
+		}
+	}
+
+	&__nav {
+		display: inline-block;
+		vertical-align: top;
+
+		@media(max-width: 991px) {}
+
+		&-ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		&-item {
+			display: inline-block;
+
+			@media(max-width: 991px) {}
+		}
+
+		&-link {
+
+			&,
+			&:focus,
+			&:visited,
+			&:active {
+				display: block;
+				padding: 35px 25px;
+				color: #282828;
+				font-size: 14px;
+				text-decoration: none;
+				outline: none;
+				position: relative;
+			}
+
+			&:hover,
+			&.active {
+				color: #fff;
+				text-decoration: none;
+				outline: none;
+				background: @blue;
+
+				&:after {
+					position: absolute;
+					visibility: hidden;
+				}
+			}
+
+			&:after {
+				position: absolute;
+				margin: 7px 25px 0px 25px;
+				content: '';
+				display: inline-block;
+				width: 1px;
+				height: 10px;
+				background: @gray;
+			}
+		}
+
+		&-registration {
+			display: inline-block;
+			margin-left: 55px;
+			position: relative;
+
+			&-link {
+				color: #282828;
+			}
+
+			&:after {
+				position: absolute;
+				margin: 7px 0px 0px 22px;
+				content: '';
+				display: inline-block;
+				width: 1px;
+				height: 10px;
+				background: @gray;
+			}
+
+		}
+
+		&-login {
+			display: inline-block;
+			margin-left: 40px;
+
+			&-link {
+				color: #282828;
+			}
+
+
+		}
+	}
+}
